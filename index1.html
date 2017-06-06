@@ -1,0 +1,114 @@
+<!DOCTYPE html> <!-- jika ada <!DOCTYPE html> maka html nya di anggap sebagai "html 5" -->
+<html lang="en"> <!-- lang adalah language, bahasanya itu english "en" -->
+
+	<head>
+		<title> My First Page </title>
+
+		<!-- untuk html 5 harus ada 2 funsi tag meta seperti dibawah -->
+		<meta charset="UTF-8"> <!-- charset="UTF-8 untuk alfabet a-z -->
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<!-- untuk penyesuaian ukuran webpage antara mobile dan dekstop -->
+
+	</head>
+
+	<body style="background-color: bisque">
+
+		<!--
+		Hello World!!!
+		<waris>Hello World!!!</waris>
+		<h1>Hello World!!!</h1> 
+		-->
+
+		<h1 align="center" style="color: green"> Title </h1>
+		
+		<p style="color:blue">
+			This Is Paragraph
+		</p>
+		
+		<p style="color:red; font-size: 15px; font-family: courier">
+			This Is Paragraph
+			<br>
+
+			<b>Content Bold</b>
+			<br>
+			<i>Content Italic</i>
+			<br>
+		</p>
+
+		<form action="" method="POST"> 
+			<input type="text"> <br>
+			<input type="password"> <br>
+			<input type="submit"> <br>
+			<input type="button" value="Tombol"> <br>
+
+			<input type="radio" name="option" value="Option1"> Option 1 <br>
+			<input type="radio" name="option" value="Option2"> Option 2 <br>
+		</form> <br>
+		
+		<canvas id="canvas1" width="200" height="100" style="border: 1px solid">
+		</canvas>
+
+		<script>
+			var c = document.getElementById("canvas1");
+			var ctx = c.getContext("2d");
+			ctx.moveTo(0,0);
+			ctx.lineTo(200, 100);
+			ctx.stroke();
+		</script>
+		<!-- tag script itu untuk memasukkan syntax javascript di html, contohnya tag script memanggil tag canvas  -->
+
+		<br><br>
+		<table>
+			<tr>
+				<th> Name </th>
+				<th> Email </th>
+			</tr>
+			<tr>
+				<td> Waris </td>
+				<td> waris.achmad95@gmail.com </td>
+			</tr>
+			<tr>
+				<td> Hazmi </td>
+				<td> hazmi.taruna@gmail.com </td>
+			</tr>
+		</table>
+
+		<div></div>
+		<!-- tag div itu untuk mengelompokkan suatu intruksi, misalnya ada 2 buah pembatas horizontal pada satu tampilan, pembatas atas warna biru dan pembatas bawah berwarna merah, maka caranya adalah dengan menggunakan tag div  -->
+		<span></span>
+		<!-- tag span itu hampir sama seperti tag div -->
+
+		<br>
+		<img src="Gambar.jpg" alt="This Is Image" style="width:100px; height:100px">
+		<br><br>
+		<video src="Video.mp4" width="400" height="300" controls> </video>	<!--controls itu untuk memunculkan tombol play -->
+		<br><br>
+		<audio src="Audio.mp3" controls> </audio>
+		<br><br>
+		<iframe src="https://www.youtube.com/embed/Tpo9WYxLdLY" width="400" height="300"></iframe>
+		<!-- tag iframe itu untuk mengambil data (image, audio, audio, video, dll) dari luar, contohnya mengambil data dari youtube -->
+
+		<ul style="list-style-type: square">
+			<li>Menu 1</li>
+			<li>Menu 2</li>
+			<li>Menu 3</li>
+		</ul>
+
+		<ol type="A">
+			<li>Menu 1</li>
+			<li>Menu 2</li>
+			<li>Menu 3</li>
+		</ol>
+
+		<nav>
+			<a href=""> Page 1 </a>
+			<a href="http://youtube.com"> Page 2 </a>
+		</nav>
+
+		<br>
+		<header> ABC </header>
+		<footer> EFG </footer>
+
+	</body>
+
+</html>
